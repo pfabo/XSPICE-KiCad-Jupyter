@@ -1,0 +1,13 @@
+.title KiCad schematic
+C3 Net-_C2-Pad2_ Net-_C1-Pad2_ {C}
+R3 0 Net-_C2-Pad2_ {(1-w)*R}
+R1 Net-_C1-Pad1_ OUT {6*R}
+C1 Net-_C1-Pad2_ Net-_C1-Pad1_ {C}
+C2 Net-_C2-Pad2_ OUT {C}
+R2 Net-_C1-Pad2_ 0 {w*R}
+V1 Net-_C1-Pad1_ 0 DC 0 SIN( 0 0 0 0 0 0 ) AC 1  
+.AC DEC 10000 10 1000
+.PARAM R=14000.0
+.PARAM C=0.1uF
+.PARAM w=0.055
+.end
