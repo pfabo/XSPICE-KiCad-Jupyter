@@ -1,0 +1,32 @@
+.title KiCad schematic
+.include "/home/pf/ownCloud/Share-Notebooks/4000-Elektronika/4036_Simulacie_Kicad/notepad/examples/0125_lorenz/xspice_analog.sp"
+.TRAN 0.0001 30 0 0 
+V3 BETA 0 DC {beta} 
+XU9 X Y Net-_U11-Pad1_ A_MULT_2 in1_gain=1.0 in1_offset=0 in2_gain=1.0 in2_offset=0 out_gain=1.0 out_offset=0
+XU3 Y X Net-_U1-Pad2_ A_SUMM_2 in1_gain=1.0 in1_offset=0 in2_gain=-1 in2_offset=0 out_gain=1.0 out_offset=0
+V2 RHO 0 DC {rho} 
+V1 SIGMA 0 DC {sigma} 
+XU2 RHO Z Net-_U2-Pad3_ A_SUMM_2 in1_gain=1.0 in1_offset=0 in2_gain=-1 in2_offset=0 out_gain=1.0 out_offset=0
+XU10 BETA Z Net-_U10-Pad3_ A_MULT_2 in1_gain=1.0 in1_offset=0 in2_gain=1.0 in2_offset=0 out_gain=1.0 out_offset=0
+XU11 Net-_U11-Pad1_ Net-_U10-Pad3_ Net-_U11-Pad3_ A_SUMM_2 in1_gain=1.0 in1_offset=0 in2_gain=-1 in2_offset=0 out_gain=1.0 out_offset=0
+XU12 Net-_U11-Pad3_ Z A_INT in_offset=0.0 out_gain=1.0 out_ic=4
+XU7 X Net-_U2-Pad3_ Net-_U6-Pad1_ A_MULT_2 in1_gain=1.0 in1_offset=0 in2_gain=1.0 in2_offset=0 out_gain=1.0 out_offset=0
+XU6 Net-_U6-Pad1_ Y Net-_U6-Pad3_ A_SUMM_2 in1_gain=1.0 in1_offset=0 in2_gain=-1 in2_offset=0 out_gain=1.0 out_offset=0
+XU4 Net-_U1-Pad3_ X A_INT in_offset=0.0 out_gain=1.0 out_ic=0
+XU1 SIGMA Net-_U1-Pad2_ Net-_U1-Pad3_ A_MULT_2 in1_gain=1.0 in1_offset=0 in2_gain=1.0 in2_offset=0 out_gain=1.0 out_offset=0
+XU8 Net-_U6-Pad3_ Y A_INT in_offset=0.0 out_gain=1.0 out_ic=1
+.PARAM sima=10
+.PARAM rho=50
+.PARAM beta=2.6666666666666665
+.PROBE v(x) v(y) v(z) 
+.PARAM sigma=10
+.PROBE v(x) v(y) v(z) 
+.PROBE v(x) v(y) v(z) 
+.PROBE v(x) v(y) v(z) 
+.PROBE v(x) v(y) v(z) 
+.PROBE v(x) v(y) v(z) 
+.PROBE v(x) v(y) v(z) 
+.PROBE v(x) v(y) v(z) 
+.PROBE v(x) v(y) v(z) 
+.PROBE v(x) v(y) v(z) 
+.end

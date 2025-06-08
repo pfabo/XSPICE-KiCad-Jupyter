@@ -1,0 +1,4572 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a")
+	(paper "User" 114.3 76.2)
+	(lib_symbols
+		(symbol "Simulation_SPICE:0"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#GND"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "0"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "0V reference potential for simulation"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "simulation"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "0_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 0 -1.27) (xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "0_1_1"
+				(pin power_in line
+					(at 0 0 0)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Simulation_SPICE:VDC"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.0254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "V"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "1"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Voltage source, DC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=+ 2=-"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Type" "DC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "simulation"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VDC_0_0"
+				(polyline
+					(pts
+						(xy -1.27 0.254) (xy 1.27 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -0.254) (xy -1.27 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 -0.254) (xy -0.254 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -0.254) (xy 0.762 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "+"
+					(at 0 1.905 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "VDC_0_1"
+				(circle
+					(center 0 0)
+					(radius 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "VDC_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "XSPICE-Analog:A_INT"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "U5"
+				(at 0.508 4.572 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "A_INT"
+				(at -11.43 10.16 0)
+				(show_name)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at -17.78 22.86 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Integrator"
+				(at -17.78 20.32 0)
+				(show_name)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "GAIN" "1.0"
+				(at 0 0 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "OFFSET" "0.0"
+				(at -7.874 -1.016 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "IC" "0.0"
+				(at 3.175 -3.81 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "A_INT"
+				(at -17.78 15.24 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at -17.78 12.7 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "xspice_analog.sp"
+				(at -17.78 17.78 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=in  2=out"
+				(at -6.858 7.62 0)
+				(show_name)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Params" "in_offset=${OFFSET} out_gain=${GAIN} out_ic=${IC}"
+				(at 7.62 24.765 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "integrator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "A_INT_0_1"
+				(arc
+					(start -2.794 -2.794)
+					(mid -3.1532 -2.6452)
+					(end -3.302 -2.286)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.286 -2.286)
+					(mid -2.4348 -2.6452)
+					(end -2.794 -2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 1.778)
+					(mid -1.6292 2.1372)
+					(end -1.27 2.286)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 2.286)
+					(mid -0.9108 2.1372)
+					(end -0.762 1.778)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.826 0) (xy -4.064 4.572) (xy -4.826 4.572) (xy -4.826 -4.572) (xy -4.064 -4.572) (xy 4.826 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "A_INT_1_1"
+				(polyline
+					(pts
+						(xy -4.064 4.572) (xy -4.064 -4.572)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 1.778) (xy -2.286 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.8)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.8)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "XSPICE-Analog:A_MULT_2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.0254)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "U1"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "A_MULT_2"
+				(at -38.1 8.89 0)
+				(show_name)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 1.27 8.382 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Analog multiplication"
+				(at -38.1 21.59 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "IN_GAIN_1" "1.0"
+				(at -5.334 3.302 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+				)
+			)
+			(property "IN_GAIN_2" "1.0"
+				(at -5.334 -1.778 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+				)
+			)
+			(property "OUT_GAIN" "1.0"
+				(at 3.048 0.762 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+				)
+			)
+			(property "IN_OFFSET_1" "0.0"
+				(at -5.334 1.524 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "IN_OFFSET_2" "0.0"
+				(at -5.334 -3.556 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "OUT_OFFSET" "0.0"
+				(at 3.048 -1.016 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "A_MULT_2"
+				(at -38.1 19.05 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at -38.1 11.43 0)
+				(show_name)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=in1 2=in2 3=out"
+				(at -38.1 6.35 0)
+				(show_name)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "xspice_analog.sp"
+				(at -38.1 16.51 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Sim.Params" "in1_gain=${IN_GAIN_1} in1_offset=0 in2_gain=${IN_GAIN_2} in2_offset=0 out_gain=${OUT_GAIN} out_offset=0"
+				(at -38.1 13.97 0)
+				(show_name)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "XSPICE"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "A_MULT_2_0_0"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.905 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -1.905 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "A_MULT_2_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "A_MULT_2_1_1"
+				(pin input line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "XSPICE-Analog:A_SUMM_2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.0254)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "U2"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "A_SUMM_2"
+				(at -38.1 8.89 0)
+				(show_name)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 1.27 8.382 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Analog addition / subtraction"
+				(at -38.1 21.59 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "IN_GAIN_1" "1.0"
+				(at -5.334 3.302 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+				)
+			)
+			(property "IN_GAIN_2" "1.0"
+				(at -5.334 -1.778 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+				)
+			)
+			(property "OUT_GAIN" "1.0"
+				(at 3.048 0.762 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+				)
+			)
+			(property "IN_OFFSET_1" "0.0"
+				(at -5.334 1.524 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "IN_OFFSET_2" "0.0"
+				(at -5.334 -3.556 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "OUT_OFFSET" "0.0"
+				(at 3.048 -1.016 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "A_SUMM_2"
+				(at -38.1 19.05 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "xspice_analog.sp"
+				(at -38.1 16.51 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at -38.1 11.43 0)
+				(show_name)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=in1 2=in2 3=out"
+				(at -38.1 6.35 0)
+				(show_name)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Sim.Params" "in1_gain=${IN_GAIN_1} in1_offset=0 in2_gain=${IN_GAIN_2} in2_offset=0 out_gain=${OUT_GAIN} out_offset=0"
+				(at -38.1 13.97 0)
+				(show_name)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "XSPICE"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "A_SUMM_2_0_0"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.905 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -1.905 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "A_SUMM_2_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0) (xy 1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.905) (xy 0 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "A_SUMM_2_1_1"
+				(pin input line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 101.6 33.655)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44dc94bd-f5ec-418f-975d-0ba78a1c381f")
+	)
+	(junction
+		(at 92.71 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b305bb26-662e-404a-96de-25446b36af00")
+	)
+	(junction
+		(at 94.615 13.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4b25b0c-35a2-48ca-a8df-134320cb2c10")
+	)
+	(wire
+		(pts
+			(xy 11.43 17.78) (xy 11.43 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0692f013-1f2f-437d-81e9-3f5fffe221ab")
+	)
+	(wire
+		(pts
+			(xy 58.42 16.51) (xy 62.23 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d145d2a-0f44-4802-b2d4-532073a1ddbb")
+	)
+	(wire
+		(pts
+			(xy 45.72 19.05) (xy 45.72 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11023443-8ba8-41ea-aaa7-37b81c9e541c")
+	)
+	(wire
+		(pts
+			(xy 11.43 36.83) (xy 11.43 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "140ee6e0-f64d-4fe2-8b40-f27e276f177d")
+	)
+	(wire
+		(pts
+			(xy 45.085 13.97) (xy 48.26 13.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bd31675-89a8-46e0-b9bf-68ed316247fa")
+	)
+	(wire
+		(pts
+			(xy 83.82 33.655) (xy 85.09 33.655)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dbd9cbf-bb6e-4183-929f-d04ddfbe87a6")
+	)
+	(wire
+		(pts
+			(xy 60.325 7.62) (xy 60.325 11.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2386b8b9-0b32-44ca-81f7-72c1e7b43e91")
+	)
+	(wire
+		(pts
+			(xy 11.43 55.88) (xy 11.43 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23fc04e3-5c9d-419b-8365-ae231933c239")
+	)
+	(wire
+		(pts
+			(xy 92.71 69.85) (xy 92.71 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2514b447-87d8-4390-bce5-41ecd26d6ae9")
+	)
+	(wire
+		(pts
+			(xy 71.12 36.195) (xy 71.12 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "273388be-a4c3-4d6c-b6dc-7af8b5a908f4")
+	)
+	(wire
+		(pts
+			(xy 48.26 19.05) (xy 45.72 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b41d0b7-e021-4b56-882d-4c8bddaab82f")
+	)
+	(wire
+		(pts
+			(xy 57.785 28.575) (xy 61.595 28.575)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34b8176f-6275-4bf1-897f-6a4cd7a9f710")
+	)
+	(wire
+		(pts
+			(xy 60.325 11.43) (xy 62.23 11.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39dc1d3b-c9d6-487a-abf9-bcd7072b32f9")
+	)
+	(wire
+		(pts
+			(xy 100.33 33.655) (xy 101.6 33.655)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47345d11-f48a-47b0-aac3-bde6081614c7")
+	)
+	(wire
+		(pts
+			(xy 45.085 41.91) (xy 47.625 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47cd9dfb-a9cf-4c70-bb14-c17ac0245d02")
+	)
+	(wire
+		(pts
+			(xy 94.615 13.97) (xy 99.06 13.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b081a40-447d-4c10-be00-6de15dc2cb99")
+	)
+	(wire
+		(pts
+			(xy 60.325 33.655) (xy 61.595 33.655)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5500132f-56ba-4975-b1ac-55249790e072")
+	)
+	(wire
+		(pts
+			(xy 60.96 53.34) (xy 60.96 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57b13350-92ad-4beb-b32e-693762277176")
+	)
+	(wire
+		(pts
+			(xy 72.39 13.97) (xy 76.835 13.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d2e3ca4-08db-4099-a705-950e0300cf27")
+	)
+	(wire
+		(pts
+			(xy 60.96 55.88) (xy 62.23 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60385f00-2cf5-4f4a-afde-fc95ad31cc8f")
+	)
+	(wire
+		(pts
+			(xy 60.96 63.5) (xy 60.96 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61671024-1875-4b35-9665-5400fe77a074")
+	)
+	(wire
+		(pts
+			(xy 91.44 58.42) (xy 92.71 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61ef5533-8333-4d84-b98f-790fd03ab242")
+	)
+	(wire
+		(pts
+			(xy 58.42 63.5) (xy 60.96 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "698d00dc-f668-49b3-8bf9-9eeb7db81aed")
+	)
+	(wire
+		(pts
+			(xy 101.6 33.655) (xy 101.6 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d1931e5-8272-4b49-a8b6-f1dffaf1fe6a")
+	)
+	(wire
+		(pts
+			(xy 92.71 58.42) (xy 99.06 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "703ce4e7-270a-4fac-b1ce-02468efbc8b9")
+	)
+	(wire
+		(pts
+			(xy 94.615 13.97) (xy 94.615 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e39b868-1c08-4b04-acb4-e598e71685f8")
+	)
+	(wire
+		(pts
+			(xy 71.755 31.115) (xy 73.66 31.115)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "833fa856-2a87-4571-95fd-2895192cb06e")
+	)
+	(wire
+		(pts
+			(xy 92.075 13.97) (xy 94.615 13.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "870e3286-0703-4b15-91ab-fdd7c9b264da")
+	)
+	(wire
+		(pts
+			(xy 71.12 36.195) (xy 73.66 36.195)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cb410db-52e2-4e9b-8fb4-1e2a70f319d1")
+	)
+	(wire
+		(pts
+			(xy 11.43 7.62) (xy 24.13 7.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "905c05b5-6e69-45cc-9a18-25ec6ade395b")
+	)
+	(wire
+		(pts
+			(xy 45.085 36.83) (xy 47.625 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a29758c9-0fc3-4cbe-915e-2c001d5cfb3e")
+	)
+	(wire
+		(pts
+			(xy 48.26 66.04) (xy 45.72 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5a29cf1-ac25-492c-8b4e-b79d18487f77")
+	)
+	(wire
+		(pts
+			(xy 45.085 7.62) (xy 60.325 7.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a61bc21d-5f65-4e85-b109-f7f17ff9a24a")
+	)
+	(wire
+		(pts
+			(xy 48.26 55.88) (xy 45.085 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a66717e2-667e-405b-a8c5-bdc1a957531e")
+	)
+	(wire
+		(pts
+			(xy 60.96 60.96) (xy 62.23 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab0d41eb-c446-479d-82ed-0056cd6e7e2d")
+	)
+	(wire
+		(pts
+			(xy 11.43 26.67) (xy 24.13 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1d92f0c-bb4c-41ee-aba1-b450280a375e")
+	)
+	(wire
+		(pts
+			(xy 45.72 22.86) (xy 94.615 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6851f58-5278-44fb-98c3-b54542718d19")
+	)
+	(wire
+		(pts
+			(xy 11.43 45.72) (xy 24.13 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b792fecb-7bff-4229-87ca-2f140b213dc9")
+	)
+	(wire
+		(pts
+			(xy 71.12 41.91) (xy 101.6 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfa938f0-aad1-4356-a815-32755bc787d9")
+	)
+	(wire
+		(pts
+			(xy 60.325 39.37) (xy 60.325 33.655)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7c3d415-6ab2-409d-8293-8a809a7931db")
+	)
+	(wire
+		(pts
+			(xy 45.72 69.85) (xy 92.71 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9220dae-0aae-49ed-ba30-597db90fb598")
+	)
+	(wire
+		(pts
+			(xy 72.39 58.42) (xy 76.2 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb9d6b0d-bb0c-4b0c-8ab3-bac0d402e3b8")
+	)
+	(wire
+		(pts
+			(xy 101.6 33.655) (xy 104.14 33.655)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbc20f5a-e492-4c20-adb9-601d23123032")
+	)
+	(wire
+		(pts
+			(xy 57.785 39.37) (xy 60.325 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd7a68eb-0a56-4d42-bb58-9fd2b3727fbd")
+	)
+	(wire
+		(pts
+			(xy 45.085 60.96) (xy 48.26 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce5df1e5-3500-4677-a035-7a4ff59e168f")
+	)
+	(wire
+		(pts
+			(xy 45.085 50.8) (xy 48.26 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ead1e76c-a73a-434f-a9fe-3178be688098")
+	)
+	(wire
+		(pts
+			(xy 45.72 66.04) (xy 45.72 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdf55869-85d7-4543-b0bf-b998c36e1c6e")
+	)
+	(wire
+		(pts
+			(xy 58.42 53.34) (xy 60.96 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff6b2407-4226-45b1-9274-5905296efb1f")
+	)
+	(global_label "X"
+		(shape input)
+		(at 57.785 28.575 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2259db20-2c07-499b-981b-3791a6bd03a5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.5903 28.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BETA"
+		(shape input)
+		(at 24.13 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "255b94fa-df66-4e1a-8120-778f96e1478d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.5904 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SIGMA"
+		(shape input)
+		(at 45.085 7.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3e6fd99c-f843-49ff-b4b3-8bb25360b16c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.4755 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SIGMA"
+		(shape input)
+		(at 24.13 7.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5882439b-fa0d-48c6-a3e1-b696d4791fca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 32.7395 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X"
+		(shape input)
+		(at 45.085 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "682e9858-bb0e-427b-bde2-fd5bb1e5e2b2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 40.8903 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Y"
+		(shape input)
+		(at 45.085 13.97 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "69505213-8806-4c8c-9370-161086cd7acf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.0112 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Y"
+		(shape input)
+		(at 104.14 33.655 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "775f18b9-b336-4ec2-b8a3-79925ec28d0e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 108.2138 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BETA"
+		(shape input)
+		(at 45.085 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7e8f62d9-24a2-45bc-a339-dae45dbc7e20")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 37.6246 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Y"
+		(shape input)
+		(at 45.085 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "87a47925-41f5-4b20-bf07-8a7651b83a65")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.0112 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X"
+		(shape input)
+		(at 99.06 13.97 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a7f67f6c-219d-4e57-829e-e778072c314c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 103.2547 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Z"
+		(shape input)
+		(at 99.06 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c293598b-d517-4c32-9550-6afa3e07e898")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 103.2547 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Z"
+		(shape input)
+		(at 45.085 41.91 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e06e8a92-e05a-48e3-80b6-2554de3179c9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 40.8903 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RHO"
+		(shape input)
+		(at 24.13 26.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ed80a0c7-5fea-44be-b240-ac0e4d3e08ce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.0462 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RHO"
+		(shape input)
+		(at 45.085 36.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f99aad3b-2622-40bd-9ee8-ae659e7f07ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.1688 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "XSPICE-Analog:A_SUMM_2")
+		(at 67.31 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "01d3504b-1530-4326-bc2c-949287f98a75")
+		(property "Reference" "U11"
+			(at 67.31 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A_SUMM_2"
+			(at 29.21 49.53 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 50.038 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Analog addition / subtraction"
+			(at 29.21 36.83 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_GAIN_1" "1.0"
+			(at 61.976 55.118 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "IN_GAIN_2" "-1.0"
+			(at 60.96 60.325 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+					(color 255 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(property "OUT_GAIN" "1.0"
+			(at 70.358 57.658 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_1" "0.0"
+			(at 61.976 56.896 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_2" "0.0"
+			(at 61.976 61.976 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "OUT_OFFSET" "0.0"
+			(at 70.358 59.436 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "A_SUMM_2"
+			(at 29.21 39.37 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "xspice_analog.sp"
+			(at 29.21 41.91 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 29.21 46.99 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=in1 2=in2 3=out"
+			(at 29.21 52.07 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "in1_gain=${IN_GAIN_1} in1_offset=0 in2_gain=${IN_GAIN_2} in2_offset=0 out_gain=${OUT_GAIN} out_offset=0"
+			(at 29.21 44.45 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cbb15646-c38f-4a77-86ad-10e29346f1f0")
+		)
+		(pin "3"
+			(uuid "a0b46057-9d76-4960-b4fd-5e699cf91ab3")
+		)
+		(pin "1"
+			(uuid "b5168add-9db5-4e6e-a488-f30f1de9ee93")
+		)
+		(instances
+			(project "0125_lorenz"
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "U11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "XSPICE-Analog:A_INT")
+		(at 92.71 33.655 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "073f8643-5e29-48b2-b6f5-4d5a3713a244")
+		(property "Reference" "U8"
+			(at 93.218 29.083 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A_INT"
+			(at 81.28 23.495 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 10.795 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Integrator"
+			(at 74.93 13.335 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "GAIN" "1.0"
+			(at 92.71 33.655 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OFFSET" "0.0"
+			(at 84.836 34.671 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IC" "1"
+			(at 95.885 37.465 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "A_INT"
+			(at 74.93 18.415 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 74.93 20.955 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "xspice_analog.sp"
+			(at 74.93 15.875 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=in  2=out"
+			(at 85.852 26.035 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "in_offset=${OFFSET} out_gain=${GAIN} out_ic=${IC}"
+			(at 100.33 8.89 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e1aeebc-5002-49fb-8133-08b59c6dc182")
+		)
+		(pin "2"
+			(uuid "df9dadf1-d419-4958-92e4-aa527eb341b4")
+		)
+		(instances
+			(project "0125_lorenz"
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "XSPICE-Analog:A_SUMM_2")
+		(at 78.74 33.655 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "1c6ad308-2137-4889-ab08-4f73c6d25b57")
+		(property "Reference" "U6"
+			(at 78.74 28.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A_SUMM_2"
+			(at 40.64 24.765 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 25.273 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Analog addition / subtraction"
+			(at 40.64 12.065 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_GAIN_1" "1.0"
+			(at 73.406 30.353 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "IN_GAIN_2" "-1.0"
+			(at 72.39 35.56 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+					(color 255 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(property "OUT_GAIN" "1.0"
+			(at 81.788 32.893 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_1" "0.0"
+			(at 73.406 32.131 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_2" "0.0"
+			(at 73.406 37.211 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "OUT_OFFSET" "0.0"
+			(at 81.788 34.671 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "A_SUMM_2"
+			(at 40.64 14.605 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "xspice_analog.sp"
+			(at 40.64 17.145 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 40.64 22.225 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=in1 2=in2 3=out"
+			(at 40.64 27.305 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "in1_gain=${IN_GAIN_1} in1_offset=0 in2_gain=${IN_GAIN_2} in2_offset=0 out_gain=${OUT_GAIN} out_offset=0"
+			(at 40.64 19.685 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "28e8dfcf-fbdd-4da0-b254-12b9e69cf8ff")
+		)
+		(pin "3"
+			(uuid "498611a9-0452-4433-b1dd-84db4d18cedf")
+		)
+		(pin "1"
+			(uuid "0f9b4440-d9e1-415e-81d9-7a3917405596")
+		)
+		(instances
+			(project "0125_lorenz"
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "XSPICE-Analog:A_INT")
+		(at 83.82 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "1fd60e68-2ec6-4803-9de9-0beb4532bc10")
+		(property "Reference" "U12"
+			(at 84.328 53.848 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A_INT"
+			(at 72.39 48.26 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 35.56 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Integrator"
+			(at 66.04 38.1 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "GAIN" "1.0"
+			(at 83.82 58.42 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OFFSET" "0.0"
+			(at 75.946 59.436 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IC" "4"
+			(at 86.995 62.23 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "A_INT"
+			(at 66.04 43.18 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 66.04 45.72 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "xspice_analog.sp"
+			(at 66.04 40.64 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=in  2=out"
+			(at 76.962 50.8 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "in_offset=${OFFSET} out_gain=${GAIN} out_ic=${IC}"
+			(at 91.44 33.655 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7d26025b-aac4-44e0-b911-d6ad180869a5")
+		)
+		(pin "2"
+			(uuid "43fdcb39-5536-4911-b64d-60f8774b6d58")
+		)
+		(instances
+			(project "0125_lorenz"
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "U12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "XSPICE-Analog:A_SUMM_2")
+		(at 52.705 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "2384a383-5067-4d60-b87b-e99fdc4f2ffb")
+		(property "Reference" "U2"
+			(at 52.705 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A_SUMM_2"
+			(at 14.605 30.48 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.705 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.975 30.988 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Analog addition / subtraction"
+			(at 14.605 17.78 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_GAIN_1" "1.0"
+			(at 47.371 36.068 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "IN_GAIN_2" "-1.0"
+			(at 46.355 41.275 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+					(color 255 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(property "OUT_GAIN" "1.0"
+			(at 55.753 38.608 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_1" "0.0"
+			(at 47.371 37.846 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_2" "0.0"
+			(at 47.371 42.926 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "OUT_OFFSET" "0.0"
+			(at 55.753 40.386 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "A_SUMM_2"
+			(at 14.605 20.32 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "xspice_analog.sp"
+			(at 14.605 22.86 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 14.605 27.94 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=in1 2=in2 3=out"
+			(at 14.605 33.02 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "in1_gain=${IN_GAIN_1} in1_offset=0 in2_gain=${IN_GAIN_2} in2_offset=0 out_gain=${OUT_GAIN} out_offset=0"
+			(at 14.605 25.4 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "43fd5602-f163-4826-a9c6-44328b88550d")
+		)
+		(pin "3"
+			(uuid "5df4fdf0-9656-46f2-8f42-bbc0e722dc53")
+		)
+		(pin "1"
+			(uuid "cf91c899-de19-47ee-8a6f-260d98bc6d7c")
+		)
+		(instances
+			(project "0125_lorenz"
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "XSPICE-Analog:A_SUMM_2")
+		(at 53.34 16.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "55bfddfd-6b20-4b53-bf61-c0c876084478")
+		(property "Reference" "U3"
+			(at 53.34 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A_SUMM_2"
+			(at 15.24 7.62 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 8.128 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Analog addition / subtraction"
+			(at 15.24 -5.08 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_GAIN_1" "1.0"
+			(at 48.006 13.208 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "IN_GAIN_2" "-1.0"
+			(at 46.99 18.415 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+					(color 255 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(property "OUT_GAIN" "1.0"
+			(at 56.388 15.748 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_1" "0.0"
+			(at 48.006 14.986 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_2" "0.0"
+			(at 48.006 20.066 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "OUT_OFFSET" "0.0"
+			(at 56.388 17.526 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "A_SUMM_2"
+			(at 15.24 -2.54 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "xspice_analog.sp"
+			(at 15.24 0 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 15.24 5.08 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=in1 2=in2 3=out"
+			(at 15.24 10.16 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "in1_gain=${IN_GAIN_1} in1_offset=0 in2_gain=${IN_GAIN_2} in2_offset=0 out_gain=${OUT_GAIN} out_offset=0"
+			(at 15.24 2.54 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d690180a-97ea-4292-9473-24746bf16f01")
+		)
+		(pin "3"
+			(uuid "6b70fbaf-94cd-4132-9a69-8318294e6cf0")
+		)
+		(pin "1"
+			(uuid "19b64b2f-19f9-40f9-bb5b-699d91c7feb4")
+		)
+		(instances
+			(project ""
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "XSPICE-Analog:A_MULT_2")
+		(at 66.675 31.115 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "586dfa77-cc93-4278-a6df-f5eef0b26f6f")
+		(property "Reference" "U7"
+			(at 66.675 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A_MULT_2"
+			(at 28.575 22.225 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.675 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.945 22.733 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Analog multiplication"
+			(at 28.575 9.525 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_GAIN_1" "1.0"
+			(at 61.341 27.813 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_GAIN_2" "1.0"
+			(at 61.341 32.893 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "OUT_GAIN" "1.0"
+			(at 69.723 30.353 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_1" "0.0"
+			(at 61.341 29.591 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_2" "0.0"
+			(at 61.341 34.671 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "OUT_OFFSET" "0.0"
+			(at 69.723 32.131 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "A_MULT_2"
+			(at 28.575 12.065 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 28.575 19.685 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=in1 2=in2 3=out"
+			(at 28.575 24.765 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "xspice_analog.sp"
+			(at 28.575 14.605 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "in1_gain=${IN_GAIN_1} in1_offset=0 in2_gain=${IN_GAIN_2} in2_offset=0 out_gain=${OUT_GAIN} out_offset=0"
+			(at 28.575 17.145 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d7d2f0a6-943c-4b36-a1b5-b33b8f8847ba")
+		)
+		(pin "1"
+			(uuid "067ccf67-6cc1-4659-99c9-2c8dac5224c6")
+		)
+		(pin "3"
+			(uuid "0da3b649-4e7f-436f-b653-cda33cbf3acc")
+		)
+		(instances
+			(project "0125_lorenz"
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:VDC")
+		(at 11.43 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59f37f19-5d8c-427d-b706-4b931ebf5a79")
+		(property "Reference" "V3"
+			(at 15.24 49.4001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "{beta}"
+			(at 15.24 51.9401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 11.43 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 11.43 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Voltage source, DC"
+			(at 11.43 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 11.43 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 11.43 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 11.43 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19a33219-2e17-4147-9a76-3c9b12d3db58")
+		)
+		(pin "2"
+			(uuid "14d51e57-7845-4e14-84ca-439a25acf763")
+		)
+		(instances
+			(project ""
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "V3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:VDC")
+		(at 11.43 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "682a657f-12da-451b-a909-e9aef12c16aa")
+		(property "Reference" "V2"
+			(at 15.24 30.3501 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "{rho}"
+			(at 15.24 32.8901 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 11.43 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 11.43 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Voltage source, DC"
+			(at 11.43 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 11.43 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 11.43 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 11.43 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19a33219-2e17-4147-9a76-3c9b12d3db58")
+		)
+		(pin "2"
+			(uuid "14d51e57-7845-4e14-84ca-439a25acf763")
+		)
+		(instances
+			(project ""
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "V2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:0")
+		(at 11.43 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9077e204-64ce-47ba-8772-5c732f1ec247")
+		(property "Reference" "#GND01"
+			(at 11.43 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0"
+			(at 13.335 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 11.43 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
+			(at 11.43 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0V reference potential for simulation"
+			(at 11.43 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "533ba474-914f-4a99-9c7f-e62b42add786")
+		)
+		(instances
+			(project ""
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "#GND01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:VDC")
+		(at 11.43 12.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d3e5827-b0e1-493a-bb90-0b8c9ec0ae6e")
+		(property "Reference" "V1"
+			(at 15.24 11.3001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "{sigma}"
+			(at 15.24 13.8401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 11.43 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 11.43 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Voltage source, DC"
+			(at 11.43 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 11.43 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 11.43 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 11.43 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19a33219-2e17-4147-9a76-3c9b12d3db58")
+		)
+		(pin "2"
+			(uuid "14d51e57-7845-4e14-84ca-439a25acf763")
+		)
+		(instances
+			(project ""
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "V1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:0")
+		(at 11.43 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae715d9e-0013-4b8e-a8ba-29f9615142a9")
+		(property "Reference" "#GND02"
+			(at 11.43 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0"
+			(at 13.335 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 11.43 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
+			(at 11.43 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0V reference potential for simulation"
+			(at 11.43 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0cbec36-118e-4b6d-a76f-2f2ca1415353")
+		)
+		(instances
+			(project "0125_lorenz"
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "#GND02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "XSPICE-Analog:A_INT")
+		(at 84.455 13.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4545637-4956-4edf-a058-e66f792c6578")
+		(property "Reference" "U4"
+			(at 84.963 9.398 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A_INT"
+			(at 73.025 3.81 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 84.455 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.675 -8.89 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Integrator"
+			(at 66.675 -6.35 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "GAIN" "1.0"
+			(at 84.455 13.97 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OFFSET" "0.0"
+			(at 76.581 14.986 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IC" "0"
+			(at 87.63 17.78 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "A_INT"
+			(at 66.675 -1.27 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 66.675 1.27 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "xspice_analog.sp"
+			(at 66.675 -3.81 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=in  2=out"
+			(at 77.597 6.35 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "in_offset=${OFFSET} out_gain=${GAIN} out_ic=${IC}"
+			(at 92.075 -10.795 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b7e8cf5-9180-4ca4-9bf5-0013e6e2cea7")
+		)
+		(pin "2"
+			(uuid "c6de10c8-d660-40a0-ab52-de69a5b79541")
+		)
+		(instances
+			(project ""
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "XSPICE-Analog:A_MULT_2")
+		(at 53.34 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "ce44efee-630f-413d-ba13-71f3ff8549fa")
+		(property "Reference" "U10"
+			(at 53.34 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A_MULT_2"
+			(at 15.24 54.61 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 55.118 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Analog multiplication"
+			(at 15.24 41.91 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_GAIN_1" "1.0"
+			(at 48.006 60.198 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_GAIN_2" "1.0"
+			(at 48.006 65.278 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "OUT_GAIN" "1.0"
+			(at 56.388 62.738 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_1" "0.0"
+			(at 48.006 61.976 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_2" "0.0"
+			(at 48.006 67.056 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "OUT_OFFSET" "0.0"
+			(at 56.388 64.516 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "A_MULT_2"
+			(at 15.24 44.45 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 15.24 52.07 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=in1 2=in2 3=out"
+			(at 15.24 57.15 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "xspice_analog.sp"
+			(at 15.24 46.99 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "in1_gain=${IN_GAIN_1} in1_offset=0 in2_gain=${IN_GAIN_2} in2_offset=0 out_gain=${OUT_GAIN} out_offset=0"
+			(at 15.24 49.53 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "31fc7e74-c97d-4300-b7e1-8e275c653cdb")
+		)
+		(pin "1"
+			(uuid "17eb21cc-e0a3-4e75-8948-7070c56c704c")
+		)
+		(pin "3"
+			(uuid "b05e4d69-5c8e-4439-9a55-9fae1f68fb9e")
+		)
+		(instances
+			(project "0125_lorenz"
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "XSPICE-Analog:A_MULT_2")
+		(at 53.34 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6580eac-c39b-47af-8172-3e7467475517")
+		(property "Reference" "U9"
+			(at 53.34 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A_MULT_2"
+			(at 15.24 44.45 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 44.958 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Analog multiplication"
+			(at 15.24 31.75 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_GAIN_1" "1.0"
+			(at 48.006 50.038 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_GAIN_2" "1.0"
+			(at 48.006 55.118 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "OUT_GAIN" "1.0"
+			(at 56.388 52.578 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_1" "0.0"
+			(at 48.006 51.816 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_2" "0.0"
+			(at 48.006 56.896 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "OUT_OFFSET" "0.0"
+			(at 56.388 54.356 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "A_MULT_2"
+			(at 15.24 34.29 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 15.24 41.91 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=in1 2=in2 3=out"
+			(at 15.24 46.99 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "xspice_analog.sp"
+			(at 15.24 36.83 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "in1_gain=${IN_GAIN_1} in1_offset=0 in2_gain=${IN_GAIN_2} in2_offset=0 out_gain=${OUT_GAIN} out_offset=0"
+			(at 15.24 39.37 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "af31a346-26df-4dc8-9065-20dd6f82a6e0")
+		)
+		(pin "1"
+			(uuid "0870cc96-d5ed-4a12-93fd-05b849732cd1")
+		)
+		(pin "3"
+			(uuid "da1d0a90-f7a9-4428-aef3-d18bec51b3bd")
+		)
+		(instances
+			(project "0125_lorenz"
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "XSPICE-Analog:A_MULT_2")
+		(at 67.31 13.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd79df88-4c62-4349-83d4-54ca41783059")
+		(property "Reference" "U1"
+			(at 67.31 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A_MULT_2"
+			(at 29.21 5.08 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 5.588 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Analog multiplication"
+			(at 29.21 -7.62 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_GAIN_1" "1.0"
+			(at 61.976 10.668 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_GAIN_2" "1.0"
+			(at 61.976 15.748 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "OUT_GAIN" "1.0"
+			(at 70.358 13.208 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_1" "0.0"
+			(at 61.976 12.446 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "IN_OFFSET_2" "0.0"
+			(at 61.976 17.526 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "OUT_OFFSET" "0.0"
+			(at 70.358 14.986 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "A_MULT_2"
+			(at 29.21 -5.08 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 29.21 2.54 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=in1 2=in2 3=out"
+			(at 29.21 7.62 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "xspice_analog.sp"
+			(at 29.21 -2.54 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "in1_gain=${IN_GAIN_1} in1_offset=0 in2_gain=${IN_GAIN_2} in2_offset=0 out_gain=${OUT_GAIN} out_offset=0"
+			(at 29.21 0 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ac284b13-5785-4494-a206-05c9a5a31dad")
+		)
+		(pin "1"
+			(uuid "23a35427-1eb3-4d4c-b023-3ebf1072242d")
+		)
+		(pin "3"
+			(uuid "9993d75a-011a-4483-9254-acea7bbf1d1c")
+		)
+		(instances
+			(project ""
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:0")
+		(at 11.43 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd84cfb3-0769-4304-990f-853401f5c2d2")
+		(property "Reference" "#GND03"
+			(at 11.43 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0"
+			(at 13.335 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 11.43 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
+			(at 11.43 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0V reference potential for simulation"
+			(at 11.43 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fbdb2818-76e4-4087-a085-7e5a5687e20d")
+		)
+		(instances
+			(project "0125_lorenz"
+				(path "/ae7c8595-ab8f-41d2-9bc5-1719c40b5e6a"
+					(reference "#GND03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+	(embedded_files
+		(file
+			(name "sheet_blank_page.kicad_wks")
+			(type worksheet)
+			(data |KLUv/SDtTQQA8kcaGHDNA0DI0YHeJkZJsFFVHWPECK8T+nf7Ruut19T/Wjj1lcRtZEY9sbORjzTz
+				BIaRKX941NSZJ0BmPfl9qd8ptZzn+0ZINNlsfT9aMk5jtv60TTtxar2BmQMgAoxWv7Yhp9ZdInlM
+				wxcXCyAQIoF8eJTajUPCXqolYFHFD/FgziWduMYHggI=|
+			)
+			(checksum "00BCE598336E5951A5D0C187D2E96FE2")
+		)
+	)
+)
