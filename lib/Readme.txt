@@ -1,0 +1,1 @@
+KiCad symbol library files 
