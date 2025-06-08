@@ -1,0 +1,10 @@
+.title KiCad schematic
+.include "./xspice_analog.sp"
+V1 Net-_V1-Pad1_ 0 DC {omega} 
+XU2 Net-_V1-Pad1_ Y2 Net-_U2-Pad3_ A_MULT_2 in1_gain=1.0 in1_offset=0 in2_gain=1.0 in2_offset=0 out_gain=-1 out_offset=0
+XU4 Net-_U2-Pad3_ Y1 A_INT in_offset=0.0 out_gain=1.0 out_ic=0.0
+XU1 Net-_V1-Pad1_ Y1 Net-_U1-Pad3_ A_MULT_2 in1_gain=1.0 in1_offset=0 in2_gain=1.0 in2_offset=0 out_gain=1.0 out_offset=0
+XU3 Net-_U1-Pad3_ Y2 A_INT in_offset=0.0 out_gain=1.0 out_ic=5
+.TRAN 1e-05 3 0 0 UIC
+.PARAM omega=15.707963267948966
+.end
