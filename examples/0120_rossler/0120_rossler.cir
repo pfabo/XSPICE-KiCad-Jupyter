@@ -1,0 +1,24 @@
+.title KiCad schematic
+.include "./xspice_analog.sp"
+.TRAN 0.001 500 0 0 
+V1 C 0 DC {c} 
+V3 A 0 DC {a} 
+V2 B 0 DC {b} 
+XU2 Net-_U2-Pad1_ X A_INT in_offset=0.0 out_gain=1.0 out_ic=0
+XU5 Net-_U4-Pad3_ Y A_INT in_offset=0.0 out_gain=1.0 out_ic=0
+XU4 X Net-_U1-Pad3_ Net-_U4-Pad3_ A_SUMM_2 in1_gain=1.0 in1_offset=0 in2_gain=1.0 in2_offset=0 out_gain=1.0 out_offset=0
+XU7 X C Net-_U6-Pad1_ A_SUMM_2 in1_gain=1.0 in1_offset=0 in2_gain=-1 in2_offset=0 out_gain=1.0 out_offset=0
+XU6 Net-_U6-Pad1_ Z Net-_U6-Pad3_ A_MULT_2 in1_gain=1.0 in1_offset=0 in2_gain=1.0 in2_offset=0 out_gain=1.0 out_offset=0
+XU9 Net-_U8-Pad3_ Z A_INT in_offset=0.0 out_gain=1.0 out_ic=0
+XU8 Net-_U6-Pad3_ B Net-_U8-Pad3_ A_SUMM_2 in1_gain=1.0 in1_offset=0 in2_gain=1.0 in2_offset=0 out_gain=1.0 out_offset=0
+XU1 A Y Net-_U1-Pad3_ A_MULT_2 in1_gain=1.0 in1_offset=0 in2_gain=1.0 in2_offset=0 out_gain=1.0 out_offset=0
+XU3 Z Y Net-_U2-Pad1_ A_SUMM_2 in1_gain=1.0 in1_offset=0 in2_gain=1.0 in2_offset=0 out_gain=-1 out_offset=0
+.PARAM a=0.2
+.PARAM b=0.2
+.PARAM c=5.7
+.PROBE v(x) v(y) v(z) 
+.PROBE v(x) v(y) v(z) 
+.PROBE v(x) v(y) v(z) 
+.PROBE v(x) v(y) v(z) 
+.PROBE v(x) v(y) v(z) 
+.end
