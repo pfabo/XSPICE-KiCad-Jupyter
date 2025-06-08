@@ -1,1 +1,1 @@
-Simualtion of diffrential equations
+Simulation of oscillator differential equations
